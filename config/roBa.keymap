@@ -49,7 +49,7 @@
 
         Ex {
             bindings = <&kp EXCLAMATION>;
-            key-positions = <26 27>;
+            key-positions = <3 4>;
         };
     };
 
