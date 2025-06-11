@@ -80,7 +80,7 @@
             bindings = <
 &kp Q           &kp W      &kp E         &kp R                        &kp T                                                       &kp Y         &kp U  &kp I      &kp O    &kp P
 &kp A           &kp S      &kp D         &kp F                        &kp G          &kp PRINTSCREEN      &kp MINUS               &kp H         &kp J  &kp K      &kp L    &kp SQT
-&kp Z           &kp X      &kp C         &kp V                        &kp B          &kp SEMICOLON        &kp COLON               &kp N         &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp Z           &kp X      &kp C         &kp V                        &kp B          &kp PLUS             &kp ASTERISK            &kp N         &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &lt_to_layer_0 2 LANGUAGE_2  &kp BACKSPACE  &kp SPACE            &lt_to_layer_0 1 LANG1  &kp KP_ENTER                             &to 6
             >;
 
@@ -146,7 +146,7 @@
             bindings = <
 &kp Q           &kp L      &kp COMMA     &kp U             &kp PERIOD                                                  &kp F         &kp W  &kp R  &kp Y  &kp P
 &kp E           &kp I      &kp A         &kp O             &kp MINUS      &kp PRINTSCREEN      &kp MINUS               &kp K         &kp T  &kp N  &kp S  &kp H
-&kp Z           &kp X      &kp C         &kp V             &kp SLASH      &kp SEMICOLON        &kp COLON               &kp G         &kp D  &kp M  &kp J  &kp B
+&kp Z           &kp X      &kp C         &kp V             &kp SLASH      &kp PLUS             &kp ASTERISK            &kp G         &kp D  &kp M  &kp J  &kp B
 &kp LEFT_SHIFT  &kp RCTRL  &kp LEFT_ALT  &lt 2 LANGUAGE_2  &kp BACKSPACE  &kp SPACE            &lt_to_layer_0 1 LANG1  &kp KP_ENTER                       &to 0
             >;
 
