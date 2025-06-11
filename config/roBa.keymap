@@ -29,12 +29,12 @@
 
         shift {
             bindings = <&kp LEFT_SHIFT>;
-            key-positions = <38 39>;
+            key-positions = <38 41>;
         };
 
         control {
             bindings = <&kp LEFT_CONTROL>;
-            key-positions = <41 40>;
+            key-positions = <40 39>;
         };
 
         click1_Ons {
