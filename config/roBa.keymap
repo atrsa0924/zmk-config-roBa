@@ -100,10 +100,10 @@
 
         NUM_Arrow {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH   &kp DOLLAR  &kp PERCENT                                           &kp LG(LS(LEFT))       &kp LS(LC(TAB))  &kp UP_ARROW    &kp LS(LC(TAB))  &kp LG(LS(RIGHT))
-&kp AMPERSAND    &kp SQT            &kp MINUS  &kp CARET   &kp AT_SIGN  &trans             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT         &kp DOWN_ARROW  &kp RIGHT        &none
-&kp SEMICOLON    &kp COLON          &kp COMMA  &kp PERIOD  &kp SLASH    &kp BACKSLASH      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none            &none           &none            &none
-&none            &none              &none      &trans      &trans       &trans             &trans                &trans                                                                   &none
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH   &kp DOLLAR  &kp PERCENT                                           &kp LG(LS(LEFT))   &kp LS(LC(TAB))  &kp UP_ARROW    &kp LS(LC(TAB))  &kp LG(LS(RIGHT))
+&kp AMPERSAND    &kp SQT            &kp MINUS  &kp CARET   &kp AT       &trans             &kp LS(N8)            &kp LS(N9)         &kp LEFT         &kp DOWN_ARROW  &kp RIGHT        &none
+&kp SEMICOLON    &kp COLON          &kp COMMA  &kp PERIOD  &kp SLASH    &kp BACKSLASH      &kp LS(LEFT_BRACKET)  &kp RIGHT_BRACKET  &none            &none           &none            &none
+&none            &none              &none      &trans      &trans       &trans             &trans                &trans                                                               &none
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
