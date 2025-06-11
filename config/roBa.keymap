@@ -36,6 +36,21 @@
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <41 40>;
         };
+
+        click1_Ons {
+            bindings = <&mkp MB1>;
+            key-positions = <6 18>;
+        };
+
+        click2_Ons {
+            bindings = <&mkp MB2>;
+            key-positions = <8 20>;
+        };
+
+        click3_Ons {
+            bindings = <&mkp MB3>;
+            key-positions = <7 19>;
+        };
     };
 
     macros {
