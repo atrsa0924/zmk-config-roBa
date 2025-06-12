@@ -80,7 +80,7 @@
             bindings = <
 &kp Q           &kp W      &kp E         &kp R                        &kp T                                                       &kp Y         &kp U  &kp I      &kp O    &kp P
 &kp A           &kp S      &kp D         &kp F                        &kp G          &kp PRINTSCREEN      &kp MINUS               &kp H         &kp J  &kp K      &kp L    &kp SQT
-&kp Z           &kp X      &kp C         &kp V                        &kp B          &kp PLUS             &kp ASTERISK            &kp N         &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp Z           &kp X      &kp C         &kp V                        &kp B          &kp SEMICOLON        &kp PLUS                &kp N         &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &lt_to_layer_0 2 LANGUAGE_2  &kp BACKSPACE  &kp SPACE            &lt_to_layer_0 1 LANG1  &kp KP_ENTER                             &to 6
             >;
 
@@ -89,10 +89,10 @@
 
         FUNCTION_Number {
             bindings = <
-&kp ESC  &kp F1  &kp F2   &kp F3   &kp F4                       &kp PLUS      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS
-&none    &kp F5  &kp F6   &kp F7   &kp F8   &trans      &none   &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp N6        &kp SLASH
-&none    &kp F9  &kp F10  &kp F11  &kp F12  &none       &none   &kp NUMBER_0  &kp N7        &kp N8        &kp N9        &kp DOT
-&none    &none   &none    &trans   &trans   &trans      &trans  &trans                                                  &none
+&kp ESC  &kp F1  &kp F2   &kp F3   &kp F4                       &kp TILDE             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS
+&none    &kp F5  &kp F6   &kp F7   &kp F8   &trans      &none   &kp LEFT_PARENTHESIS  &kp NUMBER_4  &kp NUMBER_5  &kp N6        &kp SLASH
+&none    &kp F9  &kp F10  &kp F11  &kp F12  &none       &none   &kp NUMBER_0          &kp N7        &kp N8        &kp N9        &kp DOT
+&none    &none   &none    &trans   &trans   &trans      &trans  &trans                                                          &none
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -100,10 +100,10 @@
 
         NUM_Arrow {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH   &kp DOLLAR  &kp PERCENT                                       &kp LG(LS(LEFT))   &kp LS(LC(TAB))  &kp UP_ARROW    &kp LS(LC(TAB))  &kp LG(LS(RIGHT))
-&kp AMPERSAND    &kp SQT            &kp MINUS  &kp CARET   &kp AT       &trans             &kp LS(N8)        &kp LS(N9)         &kp LEFT         &kp DOWN_ARROW  &kp RIGHT        &none
-&kp SEMICOLON    &kp COLON          &kp COMMA  &kp PERIOD  &kp SLASH    &kp BACKSLASH      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none            &none           &none            &none
-&none            &none              &none      &trans      &trans       &trans             &trans            &trans                                                               &none
+&kp EXCLAMATION  &kp ASTERISK  &kp HASH   &kp DOLLAR  &kp PERCENT                                                         &kp LG(LS(LEFT))  &kp LS(LC(TAB))  &kp UP_ARROW    &kp LS(LC(TAB))  &kp LG(LS(RIGHT))
+&kp AMPERSAND    &kp COLON     &kp MINUS  &kp CARET   &kp LS(NUMBER_2)  &trans                 &kp LS(RIGHT_PARENTHESIS)  &kp LS(N0)        &kp LEFT         &kp DOWN_ARROW  &kp RIGHT        &none
+&kp SEMICOLON    &kp COLON     &kp COMMA  &kp PERIOD  &kp SLASH         &kp RIGHT_BRACKET      &kp AT_SIGN                &kp LEFT_BRACKET  &none            &none           &none            &none
+&none            &none         &none      &trans      &trans            &trans                 &trans                     &trans                                                              &none
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
