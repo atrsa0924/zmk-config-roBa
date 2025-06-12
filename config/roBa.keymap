@@ -80,7 +80,7 @@
             bindings = <
 &kp Q           &kp W      &kp E         &kp R                        &kp T                                                       &kp Y         &kp U  &kp I      &kp O    &kp P
 &kp A           &kp S      &kp D         &kp F                        &kp G          &kp PRINTSCREEN      &kp MINUS               &kp H         &kp J  &kp K      &kp L    &kp SQT
-&kp Z           &kp X      &kp C         &kp V                        &kp B          &kp SEMICOLON        &kp PLUS                &kp N         &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp Z           &kp X      &kp C         &kp V                        &kp B          &kp SEMICOLON        &kp SQT                 &kp N         &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &lt_to_layer_0 2 LANGUAGE_2  &kp BACKSPACE  &kp SPACE            &lt_to_layer_0 1 LANG1  &kp KP_ENTER                             &to 6
             >;
 
@@ -100,10 +100,10 @@
 
         NUM_Arrow {
             bindings = <
-&kp EXCLAMATION  &kp ASTERISK  &kp HASH   &kp DOLLAR  &kp PERCENT                                                         &kp LG(LS(LEFT))  &kp LS(LC(TAB))  &kp UP_ARROW    &kp LS(LC(TAB))  &kp LG(LS(RIGHT))
-&kp AMPERSAND    &kp COLON     &kp MINUS  &kp CARET   &kp LS(NUMBER_2)  &trans                 &kp LS(RIGHT_PARENTHESIS)  &kp LS(N0)        &kp LEFT         &kp DOWN_ARROW  &kp RIGHT        &none
-&kp SEMICOLON    &kp COLON     &kp COMMA  &kp PERIOD  &kp SLASH         &kp RIGHT_BRACKET      &kp AT_SIGN                &kp LEFT_BRACKET  &none            &none           &none            &none
-&none            &none         &none      &trans      &trans            &trans                 &trans                     &trans                                                              &none
+&kp EXCLAMATION  &kp ASTERISK  &kp HASH   &kp DOLLAR  &kp PERCENT                                                &kp LG(LS(LEFT))          &kp LS(LC(TAB))  &kp UP_ARROW    &kp LS(LC(TAB))  &kp LG(LS(RIGHT))
+&kp LCTRL        &kp COLON     &kp MINUS  &kp CARET   &kp LS(NUMBER_2)  &trans                 &kp ASTERISK      &kp LS(LEFT_PARENTHESIS)  &kp LEFT         &kp DOWN_ARROW  &kp RIGHT        &none
+&kp SEMICOLON    &kp COLON     &kp COMMA  &kp PERIOD  &kp SLASH         &kp RIGHT_BRACKET      &kp LEFT_BRACKET  &kp QUESTION              &none            &none           &none            &none
+&none            &none         &none      &trans      &trans            &trans                 &trans            &trans                                                                      &none
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
@@ -146,7 +146,7 @@
             bindings = <
 &kp Q           &kp L      &kp COMMA     &kp U             &kp PERIOD                                                  &kp F         &kp W  &kp R  &kp Y  &kp P
 &kp E           &kp I      &kp A         &kp O             &kp MINUS      &kp PRINTSCREEN      &kp MINUS               &kp K         &kp T  &kp N  &kp S  &kp H
-&kp Z           &kp X      &kp C         &kp V             &kp SLASH      &kp SEMICOLON        &kp PLUS                &kp G         &kp D  &kp M  &kp J  &kp B
+&kp Z           &kp X      &kp C         &kp V             &kp SLASH      &kp SEMICOLON        &kp SQT                 &kp G         &kp D  &kp M  &kp J  &kp B
 &kp LEFT_SHIFT  &kp RCTRL  &kp LEFT_ALT  &lt 2 LANGUAGE_2  &kp BACKSPACE  &kp SPACE            &lt_to_layer_0 1 LANG1  &kp KP_ENTER                       &to 0
             >;
 
