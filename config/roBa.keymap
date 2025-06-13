@@ -39,17 +39,17 @@
 
         click1_Ons {
             bindings = <&mkp MB1>;
-            key-positions = <6 18>;
+            key-positions = <18 30>;
         };
 
         click2_Ons {
             bindings = <&mkp MB2>;
-            key-positions = <8 20>;
+            key-positions = <20 32>;
         };
 
         click3_Ons {
             bindings = <&mkp MB3>;
-            key-positions = <7 19>;
+            key-positions = <19 31>;
         };
     };
 
@@ -78,10 +78,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W      &kp E         &kp R                        &kp T                                                       &kp Y         &kp U  &kp I      &kp O    &kp P
-&kp A           &kp S      &kp D         &kp F                        &kp G          &kp PRINTSCREEN      &kp MINUS               &kp H         &kp J  &kp K      &kp L    &kp SQT
-&kp Z           &kp X      &kp C         &kp V                        &kp B          &kp SEMICOLON        &kp SQT                 &kp N         &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &lt_to_layer_0 2 LANGUAGE_2  &kp BACKSPACE  &kp SPACE            &lt_to_layer_0 1 LANG1  &kp KP_ENTER                             &to 6
+&kp Q           &kp W      &kp E         &kp R                        &kp T                                                   &kp Y         &kp U  &kp I      &kp O    &kp P
+&kp A           &kp S      &kp D         &kp F                        &kp G      &kp PRINTSCREEN      &kp MINUS               &kp H         &kp J  &kp K      &kp L    &kp SQT
+&kp Z           &kp X      &kp C         &kp V                        &kp B      &kp SEMICOLON        &kp SQT                 &kp N         &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &lt_to_layer_0 2 LANGUAGE_2  &kp SPACE  &kp BACKSPACE        &lt_to_layer_0 1 LANG1  &kp KP_ENTER                             &to 6
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
