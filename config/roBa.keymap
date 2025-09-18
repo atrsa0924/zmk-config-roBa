@@ -91,7 +91,7 @@
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 LANGUAGE_2  &kp SPACE   &kp BACKSPACE        &lt_to_layer_0 1 INT_KANA  &kp KP_ENTER                       &to 6
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         FUNCTION_Number {
