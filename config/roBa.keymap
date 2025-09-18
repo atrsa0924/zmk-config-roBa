@@ -54,30 +54,6 @@
     };
 
     macros {
-        // レイヤー切り替えと同時に入力モードを「かな」にするマクロ（Windows版）
-
-        kana_macro_win: kana_macro_win {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-
-            // Alt + ~ のショートカットを送信
-
-            bindings = <&to 6 &kp LALT &kp TILDE>;
-            label = "KANA_MACRO_WIN";
-        };
-
-        // レイヤー切り替えと同時に入力モードを「かな」にするマクロ（macOS版）
-
-        kana_macro_macos: kana_macro_macos {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-
-            // Cmd + Space のショートカットを送信
-
-            bindings = <&to 6 &kp LCMD &kp SPACE>;
-            label = "KANA_MACRO_MACOS";
-        };
-
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -94,14 +70,6 @@
     };
 
     behaviors {
-        // スムーズスクロールのためのビヘイビア
-
-        scroll_behavior: scroll_behavior {
-            compatible = "zmk,behavior-scroll";
-            label = "SCROLL_BEHAVIOR";
-            bindings = <&scroll>;
-        };
-
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
@@ -118,14 +86,12 @@
         layer_6_Onishi_kai {
             bindings = <
 &kp Q           &kp L         &kp COMMA     &kp U             &kp PERIOD                                                  &kp G         &kp Z  &kp D  &kp J  &kp B
-&kp F           &kp V         &kp I         &kp A             &kp E       &kp PRINTSCREEN      &kp MINUS                  &kp K         &kp S  &kp T  &kp N  &kp H
-&kp LEFT_SHIFT  &kp X         &kp C         &kp O             &kp SLASH   &kp SEMICOLON        &kp SQT                    &kp M         &kp Y  &kp R  &kp W  &kp P
+&kp LEFT_SHIFT  &kp V         &kp I         &kp A             &kp E       &kp PRINTSCREEN      &kp MINUS                  &kp K         &kp S  &kp T  &kp N  &kp H
+&kp F           &kp X         &kp C         &kp O             &kp SLASH   &kp SEMICOLON        &kp SQT                    &kp M         &kp Y  &kp R  &kp W  &kp P
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 LANGUAGE_2  &kp SPACE   &kp BACKSPACE        &lt_to_layer_0 1 INT_KANA  &kp KP_ENTER                       &to 6
             >;
 
-            // スクロールの方向を逆転
-
-            sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
+            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         FUNCTION_Number {
@@ -169,9 +135,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
 
-            // スムーズなスクロールへ変更
-
-            sensor-bindings = <&scroll_behavior SCROLL_VERT_POS SCROLL_VERT_NEG>;
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         SCROLL {
@@ -182,17 +146,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
 
-            // スムーズなスクロールへ変更
-
-            sensor-bindings = <&scroll_behavior SCROLL_VERT_POS SCROLL_VERT_NEG>;
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         default_layer {
             bindings = <
-&kp Q           &kp W      &kp E         &kp R                        &kp T                                                  &kp Y         &kp U  &kp I      &kp O    &kp P
-&kp A           &kp S      &kp D         &kp F                        &kp G      &kp PRINTSCREEN      &kp MINUS              &kp H         &kp J  &kp K      &kp L    &kp SQT
-&kp Z           &kp X      &kp C         &kp V                        &kp B      &kp SEMICOLON        &kp SQT                &kp N         &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &lt_to_layer_0 2 LANGUAGE_2  &kp SPACE  &kp BACKSPACE        &macro kana_macro_win  &kp KP_ENTER                             &to 0
+&kp Q           &kp W      &kp E         &kp R                        &kp T                                                        &kp Y         &kp U  &kp I      &kp O    &kp P
+&kp A           &kp S      &kp D         &kp F                        &kp G      &kp PRINTSCREEN      &kp MINUS                    &kp H         &kp J  &kp K      &kp L    &kp SQT
+&kp Z           &kp X      &kp C         &kp V                        &kp B      &kp SEMICOLON        &kp SQT                      &kp N         &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &lt_to_layer_0 2 LANGUAGE_2  &kp SPACE  &kp BACKSPACE        &lt_to_layer_0 1 LANGUAGE_1  &kp KP_ENTER                             &to 0
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
