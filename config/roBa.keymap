@@ -91,7 +91,7 @@
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 LANGUAGE_2  &kp SPACE   &kp BACKSPACE        &lt_to_layer_0 1 INT_KANA  &kp KP_ENTER                       &to 6
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp PG_DOWN PAGE_UP>;
         };
 
         FUNCTION_Number {
@@ -102,7 +102,7 @@
 &none    &none   &none    &trans   &trans   &trans      &trans  &trans                                                          &none
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp PG_DOWN PAGE_UP>;
         };
 
         NUM_Arrow {
@@ -113,7 +113,7 @@
 &none          &none         &none            &trans      &trans            &trans                 &trans            &trans                                                                      &none
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp PG_DOWN PAGE_UP>;
         };
 
         ARROW_89 {
@@ -124,7 +124,7 @@
 &none       &none                   &none           &trans                   &trans   &trans      &trans  &trans                                                     &none
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&inc_dec_kp PG_DOWN PAGE_UP>;
         };
 
         MOUSE {
@@ -135,7 +135,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp PG_DOWN PAGE_UP>;
         };
 
         SCROLL {
@@ -146,7 +146,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp PG_DOWN PAGE_UP>;
         };
 
         default_layer {
@@ -157,7 +157,7 @@
 &kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_ALT  &lt_to_layer_0 2 LANGUAGE_2  &kp SPACE  &kp BACKSPACE        &lt_to_layer_0 1 LANGUAGE_1  &kp KP_ENTER                             &to 0
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp PG_DOWN PAGE_UP>;
         };
     };
 };
