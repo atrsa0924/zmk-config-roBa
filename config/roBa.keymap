@@ -118,7 +118,7 @@
         layer_6_Onishi_kai {
             bindings = <
 &kp Q           &kp L         &kp COMMA     &kp U             &kp PERIOD                                                  &kp G         &kp Z  &kp D  &kp J  &kp B
-&kp F           &kp V         &kp I         &kp A             &kp E       &kp PRINTSCREEN      &kp MINUS                  &kp K         &kp S  &kp T  &kp N  &kp H
+&kp B           &kp V         &kp I         &kp A             &kp E       &kp PRINTSCREEN      &kp MINUS                  &kp K         &kp S  &kp T  &kp N  &kp H
 &kp LEFT_SHIFT  &kp X         &kp C         &kp O             &kp SLASH   &kp SEMICOLON        &kp SQT                    &kp M         &kp Y  &kp R  &kp W  &kp P
 &kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 LANGUAGE_2  &kp SPACE   &kp BACKSPACE        &lt_to_layer_0 1 INT_KANA  &kp KP_ENTER                       &to 6
             >;
