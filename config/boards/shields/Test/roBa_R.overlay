@@ -19,9 +19,6 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
     };
-    chosen {
-        zmk,hid = &hid0;
-    };
 };
 
 &pinctrl {
@@ -68,4 +65,10 @@
     compatible = "zmk,hid";
     usb-default-interface = "hid";
     keymap-type = "jp";
+};
+
+/ {
+    chosen {
+        zmk,hid = &hid0;
+    };
 };
